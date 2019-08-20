@@ -1,0 +1,190 @@
+html,
+body {
+  margin: 0;
+  background-color: floralwhite;
+  width: 100%;
+  height: 100%;
+}
+
+.btns {
+  width: 94%;
+  position: fixed;
+  z-index: 2;
+}
+
+.btns a {
+  padding: 15px;
+  font-family: 'oswald';
+  font-size: 22px;
+  color: aliceblue;
+  text-decoration: none;
+  position: relative;
+  outline: none;
+}
+
+.btn:focus {
+  box-shadow: none;
+}
+
+/* .btns a::after {
+  content: '';
+  position: absolute;
+  left: 10px;
+  width: 0;
+  top: 50px;
+  height: 1px;
+  background-color: red;
+  transform: translateX(-30px);
+  opacity: 1;
+  transition: all .5s;
+} */
+
+/* a:first-child:hover::after {
+  width: 70px;
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+a:nth-child(2):hover::after {
+  width: 102px;
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+a:nth-child(3):hover::after {
+  width: 83px;
+  transform: translateX(0px);
+  opacity: 1;
+} */
+
+.s1 {
+  height: 100%;
+  background-color: black;
+}
+
+.header_text {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+}
+
+.s2 {
+  height: 100%;
+  position: relative;
+}
+
+.s3 {
+  position: relative;
+  height: 100%;
+  background-color: black;
+}
+
+.header_text h2 {
+  font-size: 50px;
+  text-transform: uppercase;
+  font-family: 'Oswald';
+  position: relative;
+  overflow: hidden;
+  width: 450px;
+  height: 65px;
+}
+
+.header_text span {
+  color: #ffe5bd;
+  position: absolute;
+}
+
+.active {
+  background-color: yellow;
+}
+
+.s2 h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.s3 h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.s2_container_absolute {
+  position: absolute;
+  right: 20%;
+  top: 11%;
+}
+
+.s2_container_relative img {
+  width: auto;
+  height: 460px;
+}
+
+.s2_text {
+  padding-left: 34px;
+  color: darkslategray;
+  width: 350px;
+  position: absolute;
+  top: 11%;
+  left: -59%;
+  font-family: oswald;
+  background-color: floralwhite;
+  border-left: 1px solid rebeccapurple;
+  border-radius: 0 10px 0 10px;
+}
+
+.s2_text a {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+}
+
+.s2_text a::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 90px;
+  height: 1px;
+  background-color: rebeccapurple;
+}
+
+.s2_text span {
+  font-size: 14px;
+}
+
+.bridge {
+  width: 700px;
+}
+
+.bridge_content {
+  overflow: hidden;
+  width: 350px;
+}
+
+.s3_text {
+  padding: 0 20px;
+  font-size: 22px;
+  color: wheat;
+  opacity: 0;
+}
+
+.s3_text .word {
+  opacity: 0;
+  animation: slide 2s;
+  animation-delay: calc(.5s + (.2s * var(--word-index)));
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
